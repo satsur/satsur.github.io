@@ -6,11 +6,11 @@
       text-decoration: none;
     }
     #correctLink:link {
-    color: gold;
+    color: purple;
     text-decoration: none;
     }
     #correctLink:visited {
-    color: purple;
+    color: gold;
     text-decoration: none;
     }
     #correctLink: hover {
