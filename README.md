@@ -2,9 +2,9 @@
 <html>
   <style>
     body {
-    animation: backgroundchange, 5s infinite;
+    animation: mymove, 5s infinite;
     }
-    @keyframes backgroundchange {
+    @keyframes mymove {
     0% {background-color: red;}
     25% {background-color: green;}
     50% {background-color: blue;}
