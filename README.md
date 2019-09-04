@@ -1,6 +1,16 @@
 # satsur.github.io
 <html>
   <style>
+    body {
+    animation: backgroundchange, 5s infinite;
+    }
+    @keyframes backgroundchange {
+    0% {background-color: red;}
+    20% {background-color: green;}
+    40% {background-color: blue;}
+    60% {background-color: yellow;}
+    100% {background-color: red;}
+    }
     #correctLink {
       font-weight: bold;
       text-decoration: none;
