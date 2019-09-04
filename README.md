@@ -6,9 +6,9 @@
     }
     @keyframes backgroundchange {
     0% {background-color: red;}
-    20% {background-color: green;}
-    40% {background-color: blue;}
-    60% {background-color: yellow;}
+    25% {background-color: green;}
+    50% {background-color: blue;}
+    75% {background-color: yellow;}
     100% {background-color: red;}
     }
     #correctLink {
