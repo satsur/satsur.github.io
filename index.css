@@ -26,6 +26,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "General Sans";
+    color: var(--text-color)
 }
 
 #navbar {
@@ -35,6 +36,8 @@ body {
     box-shadow: 2px 2px 5px black;
     height: 5rem;
     padding: 0 1rem;
+    position: sticky;
+    top: 0;
 
     display: flex; /* flex-direction: row and flex-wrap: nowrap are default */
     justify-content: space-between; /* justify items horizontally (on main axis) */
@@ -45,6 +48,11 @@ body {
 
 #logo {}
 
+#link-no-style, #link-no-style:hover, #link-no-style:active, #link-no-style:visited {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 #navbar-links {
     list-style-type: none;
     display: flex;
@@ -54,7 +62,7 @@ body {
 }
 
 #navbar-link {
-    padding: 0 .75em;
+    padding: 0 1rem;
 }
 
 #navbar-link a:hover {
@@ -70,7 +78,21 @@ body {
     }
 }
 
-#link-no-style, #link-no-style:hover, #link-no-style:active, #link-no-style:visited {
-    color: var(--text-color);
-    text-decoration: none;
+.banner {
+    padding: 2rem 5rem;
+    background-color: var(--secondary-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.banner-header {
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+.banner-body {
+    width: 50%;
+    font-size: 1.4rem;
+}
+
