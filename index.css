@@ -1,0 +1,76 @@
+/* https://coolors.co/000000-66666e-9999a1 */
+
+:root {
+    --navbar-bg: black;
+    --secondary-bg: #66666E;
+    --main-bg: #9999A1;
+    --text-color: white
+}
+
+@font-face {
+    font-family: "General Sans";
+    src: url("./GeneralSans_Complete/GeneralSans_Complete/Fonts/TTF/GeneralSans-Variable.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "General Sans Italic";
+    src: url("./GeneralSans_Complete/GeneralSans_Complete/Fonts/TTF/GeneralSans-VariableItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--main-bg);
+    margin: 0;
+    padding: 0;
+    font-family: "General Sans";
+}
+
+#navbar {
+    background-color: var(--navbar-bg);
+    color: white;
+    border: 4px solid black;
+    box-shadow: 2px 2px 5px black;
+    height: 5rem;
+    padding: 0 1rem;
+
+    display: flex; /* flex-direction: row and flex-wrap: nowrap are default */
+    justify-content: space-between; /* justify items horizontally (on main axis) */
+    align-items: center; /* align items vertically (on cross axis) */
+}
+
+#navbar-logo {}
+
+#logo {}
+
+#navbar-links {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap; /* default flow */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar-link {
+    padding: 0 .75em;
+}
+
+#navbar-link a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    animation: 1s forwards navbar-text-grow;
+    animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes navbar-text-grow {
+    100% {
+       font-size: 110%; 
+    }
+}
+
+#link-no-style, #link-no-style:hover, #link-no-style:active, #link-no-style:visited {
+    color: var(--text-color);
+    text-decoration: none;
+}
